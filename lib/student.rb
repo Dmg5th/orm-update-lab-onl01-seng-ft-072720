@@ -28,6 +28,16 @@ class Student
     SQL
     DB[:conn].execute(sql)
   end 
+  
+  def save
+  
+  
+  def self.create 
+    sql = <<-SQL 
+    DROP TABLE students; 
+    SQL
+    DB[:conn].execute(sql)
+  end  
 
 
 end
