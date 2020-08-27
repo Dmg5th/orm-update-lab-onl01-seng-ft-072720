@@ -51,12 +51,14 @@ class Student
   end 
   
   def self.new_from_db(array)
-    
-        
+    id = row[0]
+    name = row[1]
+    grade = row[2]
+    student = Student.new(id,name,grade)   
   end 
   
   def self.find_by_name(name)
-    
+
   end 
   
   def update
