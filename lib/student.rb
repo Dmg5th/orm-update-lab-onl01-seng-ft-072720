@@ -42,11 +42,8 @@ class Student
   
   
   def self.create 
-    sql = <<-SQL 
-    DROP TABLE students; 
-    SQL
+    student = Student.new(name,grade)
     
-    DB[:conn].execute(sql)
   end  
 
 
