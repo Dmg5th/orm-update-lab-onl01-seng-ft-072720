@@ -48,7 +48,9 @@ class Student
     student = Student.new(name,grade)
     student.save
     student 
-  end  
+  end 
+  
+  def self.
   
   def update
     sql = "UPDATE students SET name = ?, grade = ? WHERE id = ?"
